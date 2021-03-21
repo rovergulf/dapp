@@ -17,6 +17,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## Released [v0.1.0-dev]
 
-[Unreleased]: https://github.com/rovergulf/carrack-app/compare/v0.0.1...HEAD
-[v0.0.1]: https://github.com/rovergulf/carrack-app/tree/v0.0.1
+## 21 Mar 2021
+
+
+## 21 Mar 2021
+
+### Added
+- generated plugin template
+
+
+[Unreleased]: https://github.com/rovergulf/carrack-app/compare/v0.0.1-dev...HEAD
+[v0.0.1-dev]: https://github.com/rovergulf/carrack-app/tree/v0.0.1-dev
