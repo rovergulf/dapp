@@ -7,7 +7,7 @@ class Platform {
   static const MethodChannel _channel =
       const MethodChannel('dapp');
 
-  static Future<String> get platformVersion async {
+  static Future<String> get version async {
     final String version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
