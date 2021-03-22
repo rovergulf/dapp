@@ -31,7 +31,7 @@ const List<AppTextScaleValue> kAllAppTextScaleValues = <AppTextScaleValue>[
   AppTextScaleValue(0.8, 'Small'),
   AppTextScaleValue(1.0, 'Normal'),
   AppTextScaleValue(1.3, 'Large'),
-  AppTextScaleValue(2.0, 'Huge'),
+  AppTextScaleValue(1.6, 'Huge'),
 ];
 
 @immutable
@@ -59,7 +59,7 @@ class AppVisualDensityValue {
 }
 
 const List<AppVisualDensityValue> kAllAppVisualDensityValues =
-    <AppVisualDensityValue>[
+<AppVisualDensityValue>[
   AppVisualDensityValue(VisualDensity.standard, 'System Default'),
   AppVisualDensityValue(VisualDensity.comfortable, 'Comfortable'),
   AppVisualDensityValue(VisualDensity.compact, 'Compact'),
