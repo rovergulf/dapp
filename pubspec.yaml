@@ -48,7 +48,7 @@ flutter:
       windows:
         pluginClass: DappPlugin
       web:
-        pluginClass: DappWeb
+        pluginClass: PlatformWeb
         fileName: platform_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:

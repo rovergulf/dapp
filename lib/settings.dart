@@ -1,7 +1,3 @@
-// Copyright 2019 The Flutter team. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 import 'dart:collection';
 
 import 'package:collection/collection.dart';
@@ -9,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localized_locales/flutter_localized_locales.dart';
 import 'package:dapp/constants.dart';
 import 'package:dapp/data/options.dart';
-import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
+import 'package:flutter_gen/gen_l10n/dapp_localizations.dart';
 import 'package:dapp/layout/adaptive.dart';
 import 'package:dapp/settings_list_item.dart';
 import 'package:url_launcher/url_launcher.dart';

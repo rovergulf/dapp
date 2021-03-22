@@ -1,13 +1,9 @@
-// Copyright 2019 The Flutter team. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info/package_info.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
+import 'package:flutter_gen/gen_l10n/dapp_localizations.dart';
 
 void showAboutDialog({
   @required BuildContext context,
@@ -34,8 +30,8 @@ class _AboutDialog extends StatelessWidget {
     final bodyTextStyle =
         textTheme.bodyText1.apply(color: colorScheme.onPrimary);
 
-    final name = 'Flutter Gallery'; // Don't need to localize.
-    final legalese = '© 2021 The Flutter team'; // Don't need to localize.
+    final name = 'Dapp Example'; // Don't need to localize.
+    final legalese = '© 2021 Rovergulf Engineers'; // Don't need to localize.
     final repoText = AppLocalizations.of(context).githubRepo(name);
     final seeSource =
         AppLocalizations.of(context).aboutDialogDescription(repoText);
@@ -100,27 +96,27 @@ class _AboutDialog extends StatelessWidget {
         ),
       ),
       actions: [
-        TextButton(
-          child: Text(
-            MaterialLocalizations.of(context).viewLicensesButtonLabel,
-          ),
-          onPressed: () {
-            Navigator.of(context).push(MaterialPageRoute<void>(
-              builder: (context) => Theme(
-                data: Theme.of(context).copyWith(
-                  textTheme: Typography.material2018(
-                    platform: Theme.of(context).platform,
-                  ).black,
-                  scaffoldBackgroundColor: Colors.white,
-                ),
-                child: LicensePage(
-                  applicationName: name,
-                  applicationLegalese: legalese,
-                ),
-              ),
-            ));
-          },
-        ),
+        // TextButton(
+        //   child: Text(
+        //     MaterialLocalizations.of(context).viewLicensesButtonLabel,
+        //   ),
+        //   onPressed: () {
+        //     Navigator.of(context).push(MaterialPageRoute<void>(
+        //       builder: (context) => Theme(
+        //         data: Theme.of(context).copyWith(
+        //           textTheme: Typography.material2018(
+        //             platform: Theme.of(context).platform,
+        //           ).black,
+        //           scaffoldBackgroundColor: Colors.white,
+        //         ),
+        //         child: LicensePage(
+        //           applicationName: name,
+        //           applicationLegalese: legalese,
+        //         ),
+        //       ),
+        //     ));
+        //   },
+        // ),
         TextButton(
           child: Text(MaterialLocalizations.of(context).closeButtonLabel),
           onPressed: () {
