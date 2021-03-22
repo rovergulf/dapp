@@ -9,14 +9,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 22 Mar 2021
 
 ### Added
-- restructure files
-- enhance demo widgets
+- localization support as it wanted #9
+- use https://github.com/flutter/gallery (a lot of ready to use examples) as sources for plugin
 
 ### Changed
 
 ### Fixed
 
 ### Removed
+
+
+## 22 Mar 2021
+
+### Added
+- restructure files
+- enhance demo widgets
 
 
 ## 21 Mar 2021

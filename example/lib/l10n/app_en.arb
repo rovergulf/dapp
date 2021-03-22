@@ -1,5 +1,9 @@
 {
-  "homePageTitle": "dapp Example Home",
+  "appTitle": "Dapp Example Flutter application",
+  "@appTitle": {
+    "description": "Application main title"
+  },
+  "homePageTitle": "Dapp Example Home",
   "@homePageTitle": {
     "description": "Main page title"
   },

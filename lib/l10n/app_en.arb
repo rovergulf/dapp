@@ -1,0 +1,18 @@
+{
+  "settingsPageTitle": "Settings",
+  "@settingsPageTitle": {
+    "description": "settings page title"
+  },
+  "notFoundPageTitle": "Not found",
+  "@notFoundPageTitle": {
+    "description": "not found page title"
+  },
+  "goBack": "Go back",
+  "@goBack": {
+    "description": "navigate back"
+  },
+  "unknownErr": "Something went wrong...",
+  "@unknownErr": {
+    "description": "Unexpected error"
+  }
+}

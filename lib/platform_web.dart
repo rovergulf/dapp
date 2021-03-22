@@ -11,7 +11,7 @@ import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 /// A web implementation of the Dapp plugin.
 class PlatformWeb {
   static void registerWith(Registrar registrar) {
-    final MethodChannel channel = MethodChannel(
+    final channel = MethodChannel(
       'dapp',
       const StandardMethodCodec(),
       registrar,

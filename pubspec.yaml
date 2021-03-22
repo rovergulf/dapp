@@ -13,6 +13,11 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+  url_launcher: ^6.0.2
+  package_info: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -24,6 +29,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  generate: true
   # This section identifies this Flutter project as a plugin project.
   # The 'pluginClass' and Android 'package' identifiers should not ordinarily
   # be modified. They are used by the tooling to maintain consistency when
@@ -43,7 +49,7 @@ flutter:
         pluginClass: DappPlugin
       web:
         pluginClass: DappWeb
-        fileName: dapp_web.dart
+        fileName: platform_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
