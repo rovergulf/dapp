@@ -1,0 +1,132 @@
+{
+  "githubRepo": "{repoName} GitHub repository",
+  "@githubRepo": {
+    "description": "Represents a link to a GitHub repository.",
+    "placeholders": {
+      "repoName": {
+        "example": "Dapp"
+      }
+    }
+  },
+  "aboutDialogDescription": "To see the source code for this app, please visit the {repoLink}.",
+  "@aboutDialogDescription": {
+    "description": "A description about how to view the source code for this app.",
+    "placeholders": {
+      "repoLink": {
+        "example": "Flutter Gallery GitHub repository"
+      }
+    }
+  },
+  "colorScheme": "Color scheme",
+  "@colorScheme": {
+    "description": "Color scheme"
+  },
+  "textScheme": "Text scheme",
+  "@textScheme": {
+    "description": "Text scheme"
+  },
+  "notFoundPageTitle": "Not found",
+  "@notFoundPageTitle": {
+    "description": "Not found page title"
+  },
+  "goBack": "Go back",
+  "@goBack": {
+    "description": "Navigate back label"
+  },
+  "unknownErr": "Something went wrong...",
+  "@unknownErr": {
+    "description": "Unexpected error"
+  },
+  "settingsLabel": "Settings",
+  "@settingsLabel": {
+    "description": "Title for the settings screen."
+  },
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
+    "description": "Title for the settings screen."
+  },
+  "settingsButtonLabel": "Settings",
+  "@settingsButtonLabel": {
+    "description": "Accessibility label for the settings button when settings are not showing."
+  },
+  "settingsButtonCloseLabel": "Close settings",
+  "@settingsButtonCloseLabel": {
+    "description": "Accessibility label for the settings button when settings are showing."
+  },
+  "settingsSystemDefault": "System",
+  "@settingsSystemDefault": {
+    "description": "Option label to indicate the system default will be used."
+  },
+  "settingsTextScaling": "Text scaling",
+  "@settingsTextScaling": {
+    "description": "Title for text scaling setting."
+  },
+  "settingsTextScalingSmall": "Small",
+  "@settingsTextScalingSmall": {
+    "description": "Option label for small text scale setting."
+  },
+  "settingsTextScalingNormal": "Normal",
+  "@settingsTextScalingNormal": {
+    "description": "Option label for normal text scale setting."
+  },
+  "settingsTextScalingLarge": "Large",
+  "@settingsTextScalingLarge": {
+    "description": "Option label for large text scale setting."
+  },
+  "settingsTextScalingHuge": "Huge",
+  "@settingsTextScalingHuge": {
+    "description": "Option label for huge text scale setting."
+  },
+  "settingsTextDirection": "Text direction",
+  "@settingsTextDirection": {
+    "description": "Title for text direction setting."
+  },
+  "settingsTextDirectionLocaleBased": "Based on locale",
+  "@settingsTextDirectionLocaleBased": {
+    "description": "Option label for locale-based text direction setting."
+  },
+  "settingsTextDirectionLTR": "LTR",
+  "@settingsTextDirectionLTR": {
+    "description": "Option label for left-to-right text direction setting."
+  },
+  "settingsTextDirectionRTL": "RTL",
+  "@settingsTextDirectionRTL": {
+    "description": "Option label for right-to-left text direction setting."
+  },
+  "settingsLocale": "Locale",
+  "@settingsLocale": {
+    "description": "Title for locale setting."
+  },
+  "settingsPlatformMechanics": "Platform mechanics",
+  "@settingsPlatformMechanics": {
+    "description": "Title for platform mechanics (iOS, Android, macOS, etc.) setting."
+  },
+  "settingsTheme": "Theme",
+  "@settingsTheme": {
+    "description": "Title for the theme setting."
+  },
+  "settingsDarkTheme": "Dark",
+  "@settingsDarkTheme": {
+    "description": "Title for the dark theme setting."
+  },
+  "settingsLightTheme": "Light",
+  "@settingsLightTheme": {
+    "description": "Title for the light theme setting."
+  },
+  "settingsSlowMotion": "Slow motion",
+  "@settingsSlowMotion": {
+    "description": "Title for slow motion setting."
+  },
+  "settingsAbout": "About Flutter Gallery",
+  "@settingsAbout": {
+    "description": "Title for information button."
+  },
+  "settingsFeedback": "Send feedback",
+  "@settingsFeedback": {
+    "description": "Title for feedback button."
+  },
+  "settingsAttribution": "Designed by TOASTER in London",
+  "@settingsAttribution": {
+    "description": "Title for attribution (TOASTER is a proper name and should remain in English)."
+  }
+}

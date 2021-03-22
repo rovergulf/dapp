@@ -1,9 +1,8 @@
 name: dapp
-description: A new flutter plugin project.
-version: 0.0.1-dev
-repository: https://github.com/rovergulf/dapp
-homepage: https://dapp.rovergulf.net
-documentation: https://dapp.rovergulf.net/docs
+description: Flutter engine application plugin
+version: 0.0.1
+author: Rovergulf Engineers
+homepage: https://github.com/rovergulf/dapp
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -14,18 +13,23 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  googleapis_auth: ^1.1.0
-  github: ^8.0.1
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+  url_launcher: ^6.0.2
+  package_info: ^2.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  pedantic: ^1.11.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
 flutter:
+  generate: true
   # This section identifies this Flutter project as a plugin project.
   # The 'pluginClass' and Android 'package' identifiers should not ordinarily
   # be modified. They are used by the tooling to maintain consistency when
@@ -33,7 +37,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.dapp
+        package: net.rovergulf.dapp
         pluginClass: DappPlugin
       ios:
         pluginClass: DappPlugin
@@ -44,8 +48,8 @@ flutter:
       windows:
         pluginClass: DappPlugin
       web:
-        pluginClass: DappWeb
-        fileName: dapp_web.dart
+        pluginClass: PlatformWeb
+        fileName: platform_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

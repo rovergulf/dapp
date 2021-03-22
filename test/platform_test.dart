@@ -1,14 +1,14 @@
+import 'package:dapp/dapp.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:dapp/dapp.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('dapp');
+  const channel = MethodChannel('dapp');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
   setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
+    channel.setMockMethodCallHandler((methodCall) async {
       return '42';
     });
   });
@@ -18,6 +18,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await Dapp.platformVersion, '42');
+    expect(await Platform.version, '42');
   });
 }

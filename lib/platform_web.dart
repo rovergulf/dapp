@@ -9,15 +9,15 @@ import 'package:flutter/services.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 /// A web implementation of the Dapp plugin.
-class DappWeb {
+class PlatformWeb {
   static void registerWith(Registrar registrar) {
-    final MethodChannel channel = MethodChannel(
+    final channel = MethodChannel(
       'dapp',
       const StandardMethodCodec(),
       registrar,
     );
 
-    final pluginInstance = DappWeb();
+    final pluginInstance = PlatformWeb();
     channel.setMethodCallHandler(pluginInstance.handleMethodCall);
   }
 
@@ -32,7 +32,7 @@ class DappWeb {
       default:
         throw PlatformException(
           code: 'Unimplemented',
-          details: 'dapp for web doesn\'t implement \'${call.method}\'',
+          details: 'platform for web doesn\'t implement \'${call.method}\'',
         );
     }
   }

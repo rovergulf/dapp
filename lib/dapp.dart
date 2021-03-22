@@ -1,14 +1,2 @@
-
-import 'dart:async';
-
-import 'package:flutter/services.dart';
-
-class Dapp {
-  static const MethodChannel _channel =
-      const MethodChannel('dapp');
-
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
-  }
-}
+export 'platform.dart';
+export 'platform_web.dart';
