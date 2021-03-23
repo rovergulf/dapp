@@ -45,7 +45,7 @@ class SlowMotionSetting extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        GalleryLocalizations
+                        AppLocalizations
                             .of(context)
                             .settingsSlowMotion,
                         style: textTheme.subtitle1.apply(

@@ -16,7 +16,9 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
+  flutter_localized_locales: ^2.0.1
   url_launcher: ^6.0.2
+  adaptive_breakpoints: ^0.0.4
   package_info_plus: ^1.0.0
   connectivity_plus: ^1.0.0
   device_info_plus: ^1.0.0
