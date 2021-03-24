@@ -11,8 +11,12 @@
   "@homePageWelcome": {
     "description": "The conventional newborn programmer greeting"
   },
-  "settingsPageTitle": "Settings",
-  "@settingsPageTitle": {
+  "homeTitle": "Home",
+  "@homeTitle": {
+    "description": "Home route link title"
+  },
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
     "description": "settings page title"
   },
   "notFoundPageTitle": "Not found",

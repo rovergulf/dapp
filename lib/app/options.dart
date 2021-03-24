@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:flutter/services.dart' show SystemUiOverlayStyle;
 import 'package:dapp/constants.dart';
+import 'package:provider/provider.dart';
 
 enum CustomTextDirection {
   localeBased,
@@ -212,7 +213,7 @@ class _ModelBindingScope extends InheritedWidget {
   bool updateShouldNotify(_ModelBindingScope oldWidget) => true;
 }
 
-class ModelBinding extends StatefulWidget {
+class ModelBinding extends StatefulWidget with ChangeNotifier, DiagnosticableTreeMixin {
   ModelBinding({
     Key key,
     this.initialModel = const AppOptions(),
