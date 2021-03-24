@@ -23,6 +23,7 @@ dependencies:
   connectivity_plus: ^1.0.0
   device_info_plus: ^1.0.0
   battery_plus: ^1.0.0
+  provider: ^5.0.0
 
 dev_dependencies:
   flutter_test:

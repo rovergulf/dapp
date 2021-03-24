@@ -5,8 +5,7 @@ import 'package:dapp_example/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/dapp_example_localizations.dart';
-
-const appBarDesktopHeight = 128.0;
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeRoute extends StatefulWidget {
   static const routeName = '/';
@@ -16,7 +15,7 @@ class HomeRoute extends StatefulWidget {
 }
 
 class _HomeRouteState extends State<HomeRoute> {
-  
+
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
@@ -99,9 +98,7 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
   final bool isDesktop;
 
   @override
-  Size get preferredSize => isDesktop
-      ? const Size.fromHeight(appBarDesktopHeight)
-      : const Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => Size.fromHeight(kToolbarHeight);
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +113,7 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
         preferredSize: const Size.fromHeight(26),
         child: Container(
           alignment: AlignmentDirectional.centerStart,
-          margin: const EdgeInsetsDirectional.fromSTEB(72, 0, 0, 22),
+          margin: const EdgeInsetsDirectional.fromSTEB(32, 0, 0, 16),
           child: Text(
             AppLocalizations.of(context).appTitle,
             style: themeData.textTheme.headline6.copyWith(
@@ -126,23 +123,6 @@ class AdaptiveAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       )
           : null,
-      actions: [
-        IconButton(
-          icon: const Icon(Icons.share),
-          tooltip: 'Share',
-          onPressed: () {},
-        ),
-        IconButton(
-          icon: const Icon(Icons.favorite),
-          tooltip: 'Favorite',
-          onPressed: () {},
-        ),
-        IconButton(
-          icon: const Icon(Icons.search),
-          tooltip: 'Search',
-          onPressed: () {},
-        ),
-      ],
     );
   }
 }
@@ -153,13 +133,19 @@ class ListDrawer extends StatefulWidget {
 }
 
 class _ListDrawerState extends State<ListDrawer> {
-  String currentRoute;
+  String currentRoute = '/home';
   int selectedItem;
   final numPages = 9;
+
+  final List<String> _routes = [
+    '/',
+    '/settings'
+  ];
 
   _setRoute(String route) {
     setState(() {
       currentRoute = route;
+      Navigator.of(context).restorablePushNamed(route);
     });
   }
 
@@ -177,21 +163,28 @@ class _ListDrawerState extends State<ListDrawer> {
               ),
             ),
             const Divider(),
-            ...Iterable<int>.generate(numPages).toList().map((i) {
-              return ListTile(
-                enabled: true,
-                selected: i == currentRoute,
-                leading: const Icon(Icons.favorite),
-                title: Text(
-                  'Page link ' + i.toString(),
-                ),
-                onTap: () {
-                  setState(() {
-                    selectedItem = i;
-                  });
-                },
-              );
-            }),
+            ListTile(
+              enabled: true,
+              selected: '/home' == currentRoute,
+              leading: const Icon(FontAwesomeIcons.home),
+              title: Text(
+                AppLocalizations.of(context).homeTitle,
+              ),
+              onTap: () {
+                _setRoute('/home');
+              },
+            ),
+            ListTile(
+              enabled: true,
+              selected: '/settings' == currentRoute,
+              leading: const Icon(FontAwesomeIcons.cogs),
+              title: Text(
+                AppLocalizations.of(context).settingsTitle,
+              ),
+              onTap: () {
+                _setRoute('/settings');
+              },
+            )
           ],
         ),
       ),
